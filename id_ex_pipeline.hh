@@ -2,17 +2,17 @@
 using namespace std;
 class id_ex_pipeline{
     protected:
-        int rd_data1;
-        int rd_data2;
-        int opcode;
-        int dst_reg_idx;
-        int is_mem;
-        int is_wr_en;
-        int src_idx1;
-        int src_idx2;
-        int id_funct;
-        int id_shift_amt;
-        int id_imm;
+        int rd_data1=0;
+        int rd_data2=0;
+        int opcode=0;
+        int dst_reg_idx=0;
+        int is_mem=0;
+        int is_wr_en=0;
+        int src_idx1=0;
+        int src_idx2=0;
+        int id_funct=0;
+        int id_shift_amt=0;
+        int id_imm=0;
     public:
 
         void get_pipeline_regs1(int & rd_data_temp1, int & rd_data_temp2, int & opcode_temp, int & is_mem_temp, int & dst_reg_idx_temp,int & is_wr_en_temp){

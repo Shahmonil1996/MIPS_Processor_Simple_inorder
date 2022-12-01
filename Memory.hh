@@ -47,4 +47,7 @@ class Memory{
         void clear_stall(){
             mem_valid = 1;
         }
+        int * get_ptr(){
+            return dat_mem;
+        }
 };

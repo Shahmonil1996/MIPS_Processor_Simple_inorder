@@ -3,18 +3,18 @@ using namespace std;
 class Decode{
     protected:
         int reg_file[32];
-        int idx_rs;
-        int idx_rt;
-        int opcode;
-        int idx_rd;
-        int rd_data1;
-        int rd_data2;
-        int wr_en;
-        int shift_amt;
-        int funct;
-        int imm_data;
-        int trgt_addr;
-        int imm;
+        int idx_rs=0;
+        int idx_rt=0;
+        int opcode=0;
+        int idx_rd=0;
+        int rd_data1=0;
+        int rd_data2=0;
+        int wr_en=0;
+        int shift_amt=0;
+        int funct=0;
+        int imm_data=0;
+        int trgt_addr=0;
+        int imm=0;
     public:
         int decode_valid = 1;
         int decode_flush = 0;
@@ -78,5 +78,8 @@ class Decode{
             wr_en_temp = wr_en;
             idx_rs_temp = idx_rs;
             idx_rt_temp = idx_rt;
+        }
+        int * get_ptr(){
+            return reg_file;
         }
 };

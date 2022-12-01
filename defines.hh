@@ -1,2 +1,2 @@
-#define LOAD 5;
-#define STORE 6;
+#define LOAD 35;
+#define STORE 43;
